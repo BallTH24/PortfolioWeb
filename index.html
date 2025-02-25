@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#index">Home</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#myproject">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#certificate">certificate</a></li>
                 <li><a href="#archive">Archive</a></li>
                 <li><a href="#contact-section">Contact Me</a></li>
@@ -22,7 +22,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>Hi, I'm Ball. I'm a student passionate about technology.</p>
@@ -32,7 +32,7 @@
 
 
     <!-- *******************************about********************************** -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <div class="about-image">
                 <img src="./images/1740194819969.jpg" alt="Profile Picture">
@@ -45,18 +45,19 @@
                 <div class="tab-container">
                     <button class="tab-button active" onclick="openTab(event, 'skill')">Skill</button>
                     <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+                    <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
                 </div>
                 
                 <div id="skill" class="tab-content active">
                     <div class="skill-card">
                         <h2>Skills</h2>
                         <ul>
-                            <li><i class="fab fa-html5"></i> HTML</li>
-                            <li><i class="fab fa-css3-alt"></i> CSS</li>
-                            <li><i class="fab fa-js-square"></i> JavaScript</li>
-                            <li>Python</li>
-                            <li>Photoshop</li>
-                            <li>DaVinci Resolve</li>
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">Photoshop</div>
+                            <div class="skill-item">DaVinci Resolve</div>
                         </ul>
                     </div>
                 </div>
@@ -68,30 +69,33 @@
                         <p>ม.4 ห้องเรียนพิเศษ SMTP</p>
                     </div>
                 </div>
+                <div id="projects" class="tab-content">
+                    <div class="project-card">
+                        <h2>Projects</h2>
+                        <a href="https://github.com/BallTH24" target="_blank" class="github-link skill-item">My GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>เล่นเกม</li>
-            <li>ดูยูทูป (Extreme IT, beartai & TechOffside)</li>
-        </ul>
-    </section> -->
-
-
-
 
     <!--  #####-->
     <section id="projects">
         <h2>My Projects</h2>
         <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
+   
         </ul>
     </section>
+
+    <section id="certificate">
+        <h2>Certificate</h2>
+        <ul>
+   
+        </ul>
+    </section>
+
+
+
     <section id="archive">
         <h2>My Archive</h2>
         <ul>
