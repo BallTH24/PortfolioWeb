@@ -43,13 +43,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #0cbaff;
 }
-body {
-    background-image: url('./images/22908-331768732.gif');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; 
 
-}
 
 /* Hero Section */
 .hero {
