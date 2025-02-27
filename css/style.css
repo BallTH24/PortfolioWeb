@@ -65,15 +65,20 @@ header nav ul li a:hover {
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
-    color: #ffffff; /* สีขาว */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* เงาเข้มขึ้น */
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb); /* Gradient Text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 5s infinite alternate; /* Animation สำหรับ Gradient */
+    font-weight: bold;
+    border-right: 4px solid white; /* Cursor effect */
+    padding-right: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: blinkCursor 0.7s infinite;
 }
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+
 
 .hero p {
     font-size: 24px;
