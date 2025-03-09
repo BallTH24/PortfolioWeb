@@ -16,7 +16,7 @@ function openTab(event, tabName) {
     event.currentTarget.classList.add("active");
 }
 
-// เปิดแท็บแรกโดยอัตโนมัติเมื่อโหลดหน้า
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".tab-button").click();
 });
