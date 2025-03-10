@@ -133,7 +133,6 @@ header nav ul li a:hover {
 }
 
 /* .......................................................... */
-/* ปรับขนาดรูปภาพให้ใหญ่ขึ้น */
 .about-image img {
     width: 350px;
     height: auto;
@@ -152,7 +151,6 @@ header nav ul li a:hover {
     }
 }
 
-/* ปรับขนาดข้อความใน About Me */
 .about-content h2 {
     font-size: 36px;
     color: #64b5f6;
@@ -172,7 +170,6 @@ header nav ul li a:hover {
     color: #e0e0e0;
 }
 
-/* ปรับขนาด Container ให้กว้างขึ้น */
 .about-container {
     display: flex;
     align-items: center;
@@ -182,7 +179,6 @@ header nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* ปรับระยะห่างระหว่างรูปภาพและเนื้อหา */
 .about-content {
     margin-left: 50px;
     max-width: 700px;
@@ -230,7 +226,7 @@ header nav ul li a:hover {
     background-color: #555; 
 }
 
-.tab-button.active {
+.tab-button.act                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ive {
     background-color: #64b5f6;
     color: #fff;
 }
@@ -247,7 +243,7 @@ header nav ul li a:hover {
 }
 
 
-.skill-card, .edu-card, .project-card {
+.skill-card, .edu-card{ 
     background-color: #333333;
     padding: 20px;
     margin: 20px 0;
@@ -256,7 +252,7 @@ header nav ul li a:hover {
 }
 
 
-.skill-card h2, .edu-card h2, .project-card h2 {
+.skill-card h2, .edu-card h2, h2 {
     font-size: 20px;
     color: #2a9bf8;
     margin-bottom: 10px;
@@ -301,7 +297,67 @@ header nav ul li a:hover {
     margin: 5px 0;
 }
  
-.github-link {
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.projects h1 {
+    color: #64b5f6;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-card {
+    background: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h2 {
+    color: #64b5f6;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.project-button {
     display: inline-block;
     padding: 8px 15px;
     border-radius: 5px;
@@ -314,7 +370,7 @@ header nav ul li a:hover {
     margin-top: 10px;
 }
 
-.github-link::after {
+.project-button::after {
     content: '';
     position: absolute;
     left: -100%;
@@ -325,28 +381,19 @@ header nav ul li a:hover {
     transition: left 0.3s ease-in-out;
 }
 
-.github-link:hover::after {
+.project-button:hover::after {
     left: 100%;
 }
 
-.github-link:hover {
+.project-button:hover {
     background-color: #007BFF;
     color: white;
     transform: scale(1.1) rotate(3deg);
     box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
 }
-/* เพิ่ม Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 
 /* Contact Section Layout */
-
 #contact-section {
     display: flex;
     justify-content: space-between;
@@ -385,10 +432,6 @@ header nav ul li a:hover {
     font-weight: bold;
     color: #ffffff;
 }
-
-
-
-
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
