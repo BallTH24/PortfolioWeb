@@ -61,21 +61,22 @@ header nav ul li a:hover {
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end; 
     align-items: center;
-    text-align: left;
+    text-align: right; 
     color: rgb(255, 255, 255);
-    padding-left: 20px;
+    padding-right: 85px; 
 }
 
 .hero-content {
     max-width: 600px;
 }
 
+
 .hero h1 {
     font-size: 48px;
     font-weight: bold;
-    border-right: 4px solid white; /* Cursor effect */
+    color: rgb(0, 102, 235);
     padding-right: 8px;
     white-space: nowrap;
     overflow: hidden;
@@ -109,6 +110,26 @@ header nav ul li a:hover {
 .cta-button:hover {
     background-color: #0cbaff;
 }
+.cursor {
+    font-weight: bold;
+    font-size: 60px;
+    color:  rgb(0, 102, 235);
+    animation: blink 0.7s infinite;
+}
+.cursor2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 28px; 
@@ -424,7 +445,11 @@ header nav ul li a:hover {
     transform: scale(1.1) rotate(3deg);
     box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
 }
-
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Contact Section Layout */
 #contact-section {
@@ -561,6 +586,7 @@ header nav ul li a:hover {
     .contact-form {
         width: 100%;
         margin-bottom: 20px;
+
     }
 }
 
