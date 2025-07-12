@@ -451,6 +451,56 @@ header nav ul li a:hover {
     }
 }
 
+/******************************************* Certificate ********************************************/
+.certificates {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.certificates h1 {
+    font-size: 32px;
+    color: #64b5f6;
+    margin-bottom: 20px;
+}
+
+.certificate-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.certificate-card {
+    background: #292929;
+    border-radius: 8px;
+    padding: 16px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.certificate-card h2 {
+    font-size: 14px;
+    color: #64b5f6;
+    margin: 4px 0;
+}
+
+.certificate-card p {
+    font-size: 12px;
+    color: #ccc;
+}
 /* Contact Section Layout */
 #contact-section {
     display: flex;
